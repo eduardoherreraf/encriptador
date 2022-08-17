@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reto 1 - Encriptador</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scripts.js" async></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <img src="logo.png" alt="logo de Alura" class="logoImg" />
+        <h2 class="title">Encriptador de mensajes</h2>
+      </div>
+      <div class="left">
+        <input
+          type="text"
+          class="text-input"
+          id="inputTexto"
+          placeholder="Ingrese aquí el texto..."
+        />
+      </div>
+      <div class="right">
+        <img src="munheco.png" alt="Imagen niño con lupa" id="imgDer" />
+        <h2 id="texto">Ningún mensaje fue encontrado</h2>
+        <textarea id="texto2" cols="80" rows="8">
+Ingrese el texto que desee encriptar o desencriptar</textarea
+        >
+        <button id="btn-copiar" onclick="copiar()">¡Copiar!</button>
+      </div>
+      <div class="left-button">
+        <p class="solo">Sólo letras minúsculas y sin acentos</p>
+        <button id="btn-encriptar" onclick="encriptar()">Encriptar</button>
+        <button id="btn-desencriptar" onclick="desencriptar()">
+          Desencriptar
+        </button>
+        <p class="user">Trabajo hecho por: Eduardo Herrera Forero</p>
+      </div>
+    </div>
+  </body>
+</html>
